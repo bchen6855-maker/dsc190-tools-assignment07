@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+os.makedirs("data/clean", exist_ok=True)
 
 df = pd.read_csv('data/raw/events.csv')
 df = df.dropna()
